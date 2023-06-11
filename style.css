@@ -1,6 +1,251 @@
-.titulo {
-    color: red;
-    padding: 30px;
-    border: 50px blue;
-    border-radius: 10%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+    body{
+        background-color: #ffffffdd;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .container{
+        margin: 0px;
+    }
+    
+    .back{
+        padding: 35px 0;
+        background-color: black;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    
+    }
+    .logo{
+    width: 100px;
+    left: 100px;
+    font-weight: 800;
+    margin: 0px 0px;
+    }
+    .menu .navbar ul li {
+    position: relative;
+    float: left;
+    
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 18px;
+        padding: 20px;
+        color: #ffffff;
+        display: block;
+    }
+    
+    .menu .navbar ul li a:hover {
+        color: rgb(255, 187, 108);
+    }
+    
+    #menu {
+        display:none;
+    }
+    .menu-icono{
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+
+.titulo{
+color:  rgb(255, 136, 0);
+text-shadow: #000000 1px 1px;
+padding: 100px 0px 100px 100px;
+background: url(img/fondo-titulo.jpg) 75%;
 }
+.sub-titulo{
+   color: #f6f6f6;
+   text-align: center;
+   background-color: rgb(255, 136, 0);
+}
+.sub-titulo-h3{
+   background-color:  rgb(255, 136, 0);
+   text-align: center;
+   color: #ffffff;
+   padding: 15px 0px;
+}
+.envios{
+   text-align: center;
+   background-color: rgba(187, 187, 187, 0.823);
+   color:rgb(255, 136, 0);
+   display:block;
+   align-items: center ;
+   
+}
+.envios-icon{
+   background-color:rgba(187, 187, 187, 0.823);
+   width: 25px;
+   left: 25px;
+}
+
+
+
+
+
+
+
+.oferts{
+    padding: 50px 0;
+    text-align: center;
+}
+.ofert-h2{
+    text-align: center;
+
+}
+.ofert-content{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 50px;
+ }
+ .ofert :hover{
+    border-color: #000000;
+    box-shadow: #000000;
+ }
+.ofert img{
+    height: 271px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+.ofert{
+    text-align: center;
+    padding: 30px;
+}
+.ofert h3{
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.precio{
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.btn-2{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.final{
+    font-size: 10px;
+    text-align: center;
+}
+
+
+   footer{
+    background-color: #7b7b7b;
+    text-align: center;
+
+ }
+ .footer{
+    padding: 50px;
+ }
+ .nosotros{
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+
+ }
+ .redes{
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+
+ }
+ .icono-redes{
+    width: 30px;
+    height: 30px;
+
+ }
+
+ .donde{
+
+    display: inline-block;
+    padding: 0 50px;
+    text-align: center;
+ }
+
+
+
+ @media (max-width: 991px) {
+
+    .menu{
+        padding: 0px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+.menu .navbar ul li a {
+    color: #ffffff;
+}
+
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
+.home{
+    min-height: 0vh;
+    padding: 50px 0;
+    flex-direction: column;
+}
+.oferts{
+    padding: 0px 30px 30px 30px;
+}
+.ofert-h2{
+    margin-bottom: 30px;
+}
+
+.ofert-content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+.ofert img{
+    width: 200px;
+    height: 280px;
+}
+.footer{
+    flex-direction: column;
+}
+.nosotros{
+    margin-bottom: 30px;
+}
+.redes{
+    margin-bottom: 30px;
+}
+ }
